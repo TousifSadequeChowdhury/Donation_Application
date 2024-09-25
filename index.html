@@ -36,12 +36,6 @@
   <!-- Navbar -->
   <nav class="fixed top-0 z-10 w-full backdrop-blur-md bg-green-100/20 px-4 py-6 flex items-center justify-between ">
     <div class="flex w-full justify-between items-center">
-      <!-- Hamburger button for mobile view -->
-      <button class="block lg:hidden text-neutral-500 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
-          <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-        </svg>
-      </button>
    <!-- Blog Button -->
    <div>
     <button class="btn bg-lemon border-none text-black11 w-28" onclick="openFaq()">Blog</button>
@@ -56,14 +50,14 @@
       <!-- Right content -->
       <div class="flex items-center space-x-2">
         <img src="./assets/coin.png" alt="coin" class="h-5 w-5">
-        <span id="totalBalance" class="text-sm black11_70 font-extrabold">5500</span>
+        <span id="totalBalancee" class="text-sm black11_70 font-extrabold">5500</span>
         <span class="text-sm font-extrabold">BDT</span>
       </div>
     </div>
   </nav>
 
   <!-- Donation and history buttons -->
-  <div class="pt-24 flex flex-col sm:flex-row justify-center gap-3 pb-5 px-4 mt-8">
+  <div class=" sticky top-6 bg-white-100/50 backdrop-blur-md pt-24 flex flex-col sm:flex-row justify-center gap-3 pb-5 px-4 mt-8 ">
     <button class="btn btn-outline text-black11 w-full sm:w-auto">Donation</button>
     <button class="btn btn-outline text-black11 w-full sm:w-auto">History</button>
   </div>
@@ -89,8 +83,8 @@
         <p class="text-sm md:text-base black11_70">
           The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
         </p>
-        <input id="amound" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light" />
-        <button id="donate" class="btn bg-lemon border-none text-black11 w-full"  onclick="my_modal_5.showModal()">Donate Now</button>
+        <input id="noakhaliAmound" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light" />
+        <button id="noakhaliDonate" class="btn bg-lemon border-none text-black11 w-full">Donate Now</button>
       </div>
     </div>
 
@@ -105,15 +99,15 @@
       <div class="w-full md:w-1/2 space-y-3">
         <button class="btn text-black11 flex items-center justify-center space-x-2">
           <img src="./assets/coin.png" alt="coin" class="h-6 w-6">
-          <span>0</span>
+          <span id="feni">0</span>
           <span>BDT</span>
         </button>
         <h3 class="text-lg font-bold text-black11">Donate for Flood Relief in Feni,Bangladesh</h3>
         <p class="text-sm md:text-base black11_70">
           The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
         </p>
-        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light" />
-        <button class="btn bg-lemon border-none text-black11 w-full">Donate Now</button>
+        <input id="feniAmound" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light" />
+        <button id="feniDonate" class="btn bg-lemon border-none text-black11 w-full">Donate Now</button>
       </div>
     </div>
 
@@ -128,15 +122,15 @@
       <div class="w-full md:w-1/2 space-y-3">
         <button class="btn text-black11 flex items-center justify-center space-x-2">
           <img src="./assets/coin.png" alt="coin" class="h-6 w-6">
-          <span>0</span>
+          <span id="quota" >0</span>
           <span>BDT</span>
         </button>
         <h3 class="text-lg font-bold text-black11">Aid for Injured in the Quota Movement</h3>
         <p class="text-sm md:text-base black11_70">
           The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
         </p>
-        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light" />
-        <button class="btn bg-lemon border-none text-black11 w-full">Donate Now</button>
+        <input id="quotaAmount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light" />
+        <button id="quotaDonate" class="btn bg-lemon border-none text-black11 w-full">Donate Now</button>
       </div>
     </div>
   </div>
