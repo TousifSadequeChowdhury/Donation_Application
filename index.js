@@ -80,7 +80,7 @@ const HomeTab =document.getElementById('homePage');
   document.getElementById('donationBoday').classList.add('hidden');
   const historyBox = document.createElement("div");
   historyBox.className = "p-4 border rounded-lg";
-  historyBox.innerHTML=`
+  historyBox.innerHTML = `
    <h1 class="text-black11 font-bold">Taka is Donated for</h1>
   <p class="black11_70 font-light">Date: ${new Date()}</p>
   `;
