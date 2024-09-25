@@ -4,7 +4,7 @@ function handleDonation(donationId, totalDisplayId, inputId) {
   const totalDisplayElement = document.getElementById(totalDisplayId);
   const inputValue = parseFloat(inputElement.value);
 
-  // Get the current total balance and donation totals dynamically from the DOM
+   // Get the current total balance and donation totals dynamically from the DOM
   let totalBalance = parseFloat(document.getElementById("totalBalancee").innerHTML);
   let noakhaliTotal = parseFloat(document.getElementById("noakhali").innerHTML);
   let feniTotal = parseFloat(document.getElementById("feni").innerHTML);
