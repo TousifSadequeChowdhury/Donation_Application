@@ -68,4 +68,26 @@ function openHome() {
   }
   
   
+  //History
   
+const HistoryTab =document.getElementById('history');
+const HomeTab =document.getElementById('homePage');
+//button class
+  HistoryTab.addEventListener('click',function(){
+  HistoryTab.classList.add("bg-lemon" ,"border-none");
+  HomeTab.classList.remove("bg-lemon" ,"border-none");
+
+  document.getElementById('donationBoday').classList.add('hidden');
+  const historyBox = document.createElement("div");
+  historyBox.className = "p-4 border rounded-lg";
+  historyBox.innerHTML=`
+   <h1 class="text-black11 font-bold">Taka is Donated for</h1>
+  <p class="black11_70 font-light">Date: ${new Date()}</p>
+  `;
+
+const historyContainer=document.getElementById("history");
+historyContainer.insertBefore (historyBox,historyContainer.firstChild)
+
+});
+
+

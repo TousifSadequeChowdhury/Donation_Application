@@ -50,7 +50,7 @@
        <!-- Right content -->
       <div class="flex items-center space-x-2">
         <img src="./assets/coin.png" alt="coin" class="h-5 w-5">
-        <span id="totalBalancee" class="text-sm black11_70 font-extrabold">5500</span>
+        <span id="totalBalancee" class="text-sm black11_70 font-extrabold">5974</span>
         <span class="text-sm font-extrabold">BDT</span>
       </div>
     </div>
@@ -58,12 +58,12 @@
 
   <!-- Donation and history buttons -->
   <div class=" sticky top-6 bg-white-100/50 backdrop-blur-md pt-24 flex flex-col sm:flex-row justify-center gap-3 pb-5 px-4 mt-8 ">
-    <button class="btn btn-outline text-black11 w-full sm:w-auto">Donation</button>
-    <button class="btn btn-outline text-black11 w-full sm:w-auto">History</button>
+    <button id="homePage" class="btn btn-outline text-black11 w-full sm:w-auto  bg-lemon border-none">Donation</button>
+    <button id="history" class="btn btn-outline text-black11 w-full sm:w-auto">History</button>
   </div>
 
   <!-- Main donation content -->
-  <div class="px-4 md:px-36 space-y-8 ">
+  <div id='donationBoday' class="px-4 md:px-36 space-y-8">
 
 
     <!-- Noakhali -->
@@ -76,7 +76,7 @@
       <div class="w-full md:w-1/2 space-y-3">
         <button class="btn text-black11 flex items-center justify-center space-x-2">
           <img src="./assets/coin.png" alt="coin" class="h-6 w-6">
-          <span id="noakhali">0</span>
+          <span id="noakhali">492</span>
           <span>BDT</span>
         </button>
         <h3 class="text-lg font-bold text-black11">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -99,7 +99,7 @@
       <div class="w-full md:w-1/2 space-y-3">
         <button class="btn text-black11 flex items-center justify-center space-x-2">
           <img src="./assets/coin.png" alt="coin" class="h-6 w-6">
-          <span id="feni">0</span>
+          <span id="feni">385</span>
           <span>BDT</span>
         </button>
         <h3 class="text-lg font-bold text-black11">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -122,7 +122,7 @@
       <div class="w-full md:w-1/2 space-y-3">
         <button class="btn text-black11 flex items-center justify-center space-x-2">
           <img src="./assets/coin.png" alt="coin" class="h-6 w-6">
-          <span id="quota" >0</span>
+          <span id="quota" >279</span>
           <span>BDT</span>
         </button>
         <h3 class="text-lg font-bold text-black11">Aid for Injured in the Quota Movement</h3>
@@ -135,12 +135,26 @@
     </div>
   </div>
 
+
+
+<!-- History section -->
+
+<!-- <div class="mt-9 mx-36 rounded-lg space-y-6"> -->
+  <div id="history" class="p-4 border rounded-lg">
+    <!-- <h1 id="donateto" class="text-black11 font-bold">6500 Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+    <p id="time" class="black11_70 font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p> -->
+  </div>
+<!-- </div> -->
+
+
+
+
+
+
+
 <!-- Footer -->
  <footer class="h-16 mt-8 bg-green-100/20" >
-
  </footer>
-
-
   <!-- Modal -->
   <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
     <div class="modal-box flex flex-col items-center">
